@@ -1,0 +1,6 @@
+Twitter:
+- Durchsuchen nach file number
+- Tag liste mit common words
+
+LexFind:
+- API!!!

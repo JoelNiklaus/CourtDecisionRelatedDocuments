@@ -1,0 +1,33 @@
+Database-Attributes:
+-id (self-set)
+-url
+-filename
+-date
+-reference number of court decisions
+-text sections (e.g. abstract)
+-full text
+
+dont lose metadata
+
+ask dominic for tika service
+roland fragen für FDN sandbox 3 Account für scraping server
+
+
+
+- start with json$
+
+in 2 weeks:
+-media messeges finished in json
+-twitter with json from joel
+
+
+next Meeting:
+1. remote host für vscode hinzufügen für fdn-sandbox3
+https://code.visualstudio.com/docs/remote/ssh
+https://marketplace.visualstudio.com/items?itemName=wuwei.upload
+2. LexFind.ch html und evtl einzelne abschnitte scrapen
+3. bger.ch fertigstellen
+
+
+
+

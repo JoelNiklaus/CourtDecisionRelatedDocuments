@@ -1,0 +1,63 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfgantt}
+
+\title{Project Proposal: Web Scraping for a Database of Court Decision Related Documents}
+\author{Alec Schürmann}
+\date{Mai 2021}
+
+\begin{document}
+	
+\maketitle
+
+\begin{abstract}
+
+So far, no datasets of external documents related to Swiss federal court rulings have been collected. In order to provide a database of court decision related documents, promising online data sources will be identified. In a second step, the HTML of chosen websites will be analyzed and the documents will be scraped. Furthermore, the texts from the documents will be extracted and structured in a database. Finally the results will be evaluated in the context of the overarching research project "Open Justice vs. Privacy" to automate re-identification of involved people in court decisions.
+	
+\end{abstract}
+
+\section{Introduction}
+To protect the privacy of involved people in Swiss court decisions, documents are anonymized. By linking the rulings with external data, previous research \cite{vokinger2019re} has shown, that it is possible to re-identify companies involved in court decisions. In order to build an automated system for re-identifying people from court rulings, external data is needed. The goal of this project is to create a structured database from Swiss court decisions related documents by scraping related online documents and extracting the data.
+
+\section{Related Work}
+The article "A comparative study on web scraping" from De S Sirisuriya et al \cite{sirisuriya2015comparative} shows the background and different techniques of web scraping in general. Additionally, it compares them by evaluating the techniques and software. "Choosing scrapy" from Daniel Myers and James W McGuffee \cite{myers2015choosing} is a paper exploring the viability of Scrapy for undergraduate projects. Finally they also explain why it was preferred for their student project. The article "Comparison of web scraping techniques: regular expression, HTML DOM and Xpath" from Gunawan, Rohmat et al \cite{gunawan2019comparison} explains the importance of web scraping and compares three different web scraping techniques. The comparison is done by testing all the methods when retrieving data from target websites. They use process time, memory usage and data consumption as parameters in the experiment.
+
+
+\section{Tools}
+In this project, \textbf{BeautifulSoup} will be used for scraping the documents from websites. The decision was between either Scrapy or BeautifulSoup. Both of them are based on Python. BeautifulSoup only parses and extracts data from HTML files, whereas Scrapy downloads, processes and saves the data. While Scrapy offers more speed and scalability, BeautifulSoup is more fitting for the scale of this project, as the main use is content parsing. It will also require an additional content downloader to download those HTML files\footnote{https://smartproxy.com/blog/scrapy-vs-beautifulsoup}.
+
+\section{Timetable}
+\begin{ganttchart}[vgrid]{1}{16}
+	\gantttitle{2021}{16} \\
+	\gantttitle{May}{4}
+	\gantttitle{June}{4}
+	\gantttitle{July}{4}
+	\gantttitle{August}{4} \\
+	\ganttgroup{Initial Phase}{1}{2} \\
+	\ganttbar{Research Scraping-Tools}{1}{1} \\
+	\ganttbar{Identify \& Analyze Sources}{1}{1} \\
+	\ganttlinkedbar{Scrape First Document \& Preparation}{2}{2} \\
+	\ganttmilestone{Seminar Presentation}{2} \\
+	\ganttgroup{Doing-It Phase}{3}{10} \\
+	\ganttbar{Scraping Algorithm}{3}{6} \\
+	\ganttmilestone{Intermediate Presentation}{6} \\
+	\ganttbar{Text Extraction \& Database}{7}{10} \\
+	\ganttmilestone{Coding done}{10} \\
+	\ganttgroup{Final Phase}{11}{16} \\
+	\ganttbar{Evaluate the results}{11}{11} \\
+	\ganttbar{Finalize Thesis \& Preparation}{12}{16} \\
+	\ganttmilestone{Final Presentation}{16} \\
+	\ganttlink{elem3}{elem4}
+	\ganttlink{elem6}{elem7}
+	\ganttlink{elem8}{elem9}
+	\ganttlink{elem11}{elem12}
+	\ganttlink{elem12}{elem13}
+\end{ganttchart}
+
+% You should cite all sources mentioned in this proposal in the file 11785_project.bib
+% Use \cite{name} to cite
+
+\bibliography{bibliography}
+\bibliographystyle{plain}
+
+\end{document}

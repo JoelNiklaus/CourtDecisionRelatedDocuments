@@ -1,0 +1,11 @@
+https://developer.twitter.com/en/docs/twitter-api/
+
+probably require API v2
+
+1. Apply for dev account
+2. Create Project / dev App
+3. Save API Keys, Access Tokens, Bearer Token to PWDManager
+free plan only 50 Requests/Month
+
+https://developer.twitter.com/en/products/twitter-api/academic-research
+-- Academic Research

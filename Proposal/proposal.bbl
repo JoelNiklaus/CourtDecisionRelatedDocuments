@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{gunawan2019comparison}
+Rohmat Gunawan, Alam Rahmatulloh, Irfan Darmawan, and Firman Firdaus.
+\newblock Comparison of web scraping techniques: regular expression, html dom
+  and xpath.
+\newblock In {\em 2018 International Conference on Industrial Enterprise and
+  System Engineering (ICoIESE 2018)}, pages 283--287. Atlantis Press, 2019.
+
+\bibitem{myers2015choosing}
+Daniel Myers and James~W McGuffee.
+\newblock Choosing scrapy.
+\newblock {\em Journal of Computing Sciences in Colleges}, 31(1):83--89, 2015.
+
+\bibitem{sirisuriya2015comparative}
+De~S Sirisuriya et~al.
+\newblock A comparative study on web scraping.
+\newblock {\em Department of Computer Science, Faculty of Computing, General
+  Sir John Kotelawala Defence University, Ratmalana, Sri Lanka}, 2015.
+
+\bibitem{vokinger2019re}
+Kerstin~No{\"e}lle Vokinger and Urs~Jakob M{\"u}hlematter.
+\newblock {\em Re-Identifikation von Gerichtsurteilen durch" Linkage" von Daten
+  (banken): eine empirische Analyse anhand von Bundesgerichtsbeschwerden gegen
+  (Preisfestsetzungs-) Verf{\"u}gungen von Arzneimitteln}.
+\newblock 2019.
+
+\end{thebibliography}
